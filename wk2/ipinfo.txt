@@ -1,0 +1,61 @@
+Domain: cnn.com
+San Francisco CA, United States:
+- 151.101.195.5
+- 151.101.3.5
+- 151.101.67.5
+- 151.101.131.5
+
+Mountain View CA, United States:
+- 151.101.3.5
+- 151.101.131.5
+- 151.101.67.5
+- 151.101.195.5
+
+Berkeley, US:
+- 151.101.195.5
+- 151.101.131.5
+- 151.101.3.5
+
+Domain: NYTimes.com
+San Francisco CA, United States:
+151.101.65.164
+151.101.129.164
+151.101.193.164
+151.101.1.164
+
+Mountain View CA, United States
+151.101.65.164
+151.101.193.164
+151.101.129.164
+151.101.1.164
+
+Berkeley, US
+151.101.193.164
+151.101.65.164
+151.101.1.164
+151.101.129.164
+
+Domain: example.com
+San Francisco CA, United States
+93.184.215.14
+ountain View CA, United States
+93.184.215.14
+
+Domain: bbc.com
+San Francisco CA, United States
+151.101.192.81
+151.101.0.81
+151.101.64.81
+151.101.128.81
+Mountain View CA, United States
+151.101.64.81
+151.101.192.81
+151.101.128.81
+151.101.0.81
+
+Domain:apple.com
+San Francisco CA, United States
+17.253.144.10
+Mountain View CA, United States
+17.253.144.10
+
