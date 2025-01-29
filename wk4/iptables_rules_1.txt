@@ -1,0 +1,84 @@
+Chain INPUT (policy DROP 70 packets, 3654 bytes)
+ pkts bytes target     prot opt in     out     source               destination         
+1182K  374M ufw-before-logging-input  all  --  any    any     anywhere             anywhere            
+1182K  374M ufw-before-input  all  --  any    any     anywhere             anywhere            
+ 175K 8758K ufw-after-input  all  --  any    any     anywhere             anywhere            
+ 172K 8629K ufw-after-logging-input  all  --  any    any     anywhere             anywhere            
+ 172K 8629K ufw-reject-input  all  --  any    any     anywhere             anywhere            
+ 172K 8629K ufw-track-input  all  --  any    any     anywhere             anywhere            
+    0     0 DROP       icmp --  any    any     anywhere             anywhere            
+  767  102K ACCEPT     tcp  --  any    any     anywhere             anywhere             tcp dpt:ssh
+   25  1928 ACCEPT     tcp  --  any    any     anywhere             anywhere             tcp dpt:http
+    0     0 ACCEPT     tcp  --  any    any     anywhere             anywhere             tcp dpt:https
+
+Chain FORWARD (policy ACCEPT 0 packets, 0 bytes)
+ pkts bytes target     prot opt in     out     source               destination         
+    0     0 ufw-before-logging-forward  all  --  any    any     anywhere             anywhere            
+    0     0 ufw-before-forward  all  --  any    any     anywhere             anywhere            
+    0     0 ufw-after-forward  all  --  any    any     anywhere             anywhere            
+    0     0 ufw-after-logging-forward  all  --  any    any     anywhere             anywhere            
+    0     0 ufw-reject-forward  all  --  any    any     anywhere             anywhere            
+    0     0 ufw-track-forward  all  --  any    any     anywhere             anywhere            
+
+Chain OUTPUT (policy ACCEPT 1725 packets, 324K bytes)
+ pkts bytes target     prot opt in     out     source               destination         
+1021K  217M ufw-before-logging-output  all  --  any    any     anywhere             anywhere            
+1021K  217M ufw-before-output  all  --  any    any     anywhere             anywhere            
+ 9586 1052K ufw-after-output  all  --  any    any     anywhere             anywhere            
+ 9586 1052K ufw-after-logging-output  all  --  any    any     anywhere             anywhere            
+ 9586 1052K ufw-reject-output  all  --  any    any     anywhere             anywhere            
+ 9586 1052K ufw-track-output  all  --  any    any     anywhere             anywhere            
+
+Chain ufw-after-forward (1 references)
+ pkts bytes target     prot opt in     out     source               destination         
+
+Chain ufw-after-input (1 references)
+ pkts bytes target     prot opt in     out     source               destination         
+
+Chain ufw-after-logging-forward (1 references)
+ pkts bytes target     prot opt in     out     source               destination         
+
+Chain ufw-after-logging-input (1 references)
+ pkts bytes target     prot opt in     out     source               destination         
+
+Chain ufw-after-logging-output (1 references)
+ pkts bytes target     prot opt in     out     source               destination         
+
+Chain ufw-after-output (1 references)
+ pkts bytes target     prot opt in     out     source               destination         
+
+Chain ufw-before-forward (1 references)
+ pkts bytes target     prot opt in     out     source               destination         
+
+Chain ufw-before-input (1 references)
+ pkts bytes target     prot opt in     out     source               destination         
+
+Chain ufw-before-logging-forward (1 references)
+ pkts bytes target     prot opt in     out     source               destination         
+
+Chain ufw-before-logging-input (1 references)
+ pkts bytes target     prot opt in     out     source               destination         
+
+Chain ufw-before-logging-output (1 references)
+ pkts bytes target     prot opt in     out     source               destination         
+
+Chain ufw-before-output (1 references)
+ pkts bytes target     prot opt in     out     source               destination         
+
+Chain ufw-reject-forward (1 references)
+ pkts bytes target     prot opt in     out     source               destination         
+
+Chain ufw-reject-input (1 references)
+ pkts bytes target     prot opt in     out     source               destination         
+
+Chain ufw-reject-output (1 references)
+ pkts bytes target     prot opt in     out     source               destination         
+
+Chain ufw-track-forward (1 references)
+ pkts bytes target     prot opt in     out     source               destination         
+
+Chain ufw-track-input (1 references)
+ pkts bytes target     prot opt in     out     source               destination         
+
+Chain ufw-track-output (1 references)
+ pkts bytes target     prot opt in     out     source               destination         
